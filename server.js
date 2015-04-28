@@ -17,8 +17,8 @@ function start(route, handle) {
       route(handle, pathname, response, request)
    }
     
-   //https.createServer(options, onRequest).listen(8888);
-   http.createServer(onRequest).listen(8888);
+   //https.createServer(options, onRequest).listen(80);
+   http.createServer(onRequest).listen(80);
    console.log("Server has started.");
 }
 
