@@ -1,0 +1,21 @@
+{
+  "name": "ota-server",
+  "version": "0.1.0",
+  "description": "A Node.js server for Over The Air updates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "tar": "~2.1.x",
+    "node-xml-lite": "0.0.3",
+    "deasync": "~0.0.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stseraf/ota-server"
+  }
+}

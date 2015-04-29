@@ -1,0 +1,7 @@
+{
+  "name": "SWDL OTA Updates Server",
+  "description": "A Node.js server for Over The Air updates",
+  "repository": "https://github.com/stseraf/ota-server",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node"]
+}

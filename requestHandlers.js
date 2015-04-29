@@ -61,17 +61,17 @@ function test(response, request) {
    var updates = findUpdates();
    var path = UPDATES_PATH + '/' + updates;
    console.log("Updates: " + path);
+   response.write("Updates: " + path);
    console.log('Check version: ' + checkVersion('RRWOW_1429546229_1', path));
    response.end();
    console.log("---------------------------------------------------]");
 }
 
-function hello(response) {
+function hello(response, request) {
    console.log("[--------------hello-------------------------------");
+   console.log(request.headers)
    response.writeHead(200, {"Content-Type": "text/plain"})
-   var hello = "Hello, I'm SWDL server!";
-   response.write(hello);
-   console.log(hello);
+   response.write("Hello, I'm SWDL server!");
    console.log("---------------------------------------------------]");
    response.end();
 }
